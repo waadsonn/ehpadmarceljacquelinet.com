@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - EHPAD Marcel-Jacquelinet</title>
+    <link rel="stylesheet" href="styles.css">
+     <!-- Lien CSS de Bootstrap -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Liens JS de Bootstrap (y compris jQuery et Popper.js pour le dropdown) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="container welcome-message">
+            <h1>EHPAD Marcel-Jacquelinet</h1>
+            <p>65, route de Dijon, 21600 LONGVIC</p>
+            <p>Nous contacter : <a href="tel:0380653422">03 80 65 34 22</a></p>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        À propos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                        <a class="dropdown-item" href="team.html">Équipe</a>
+                        <a class="dropdown-item" href="mission.html">Mission</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <a class="dropdown-item" href="life-at-ehpad.html">Vie à l'EHPAD</a>
+                        <a class="dropdown-item" href="medical-care.html">Soins médicaux</a>
+                        <a class="dropdown-item" href="activities.html">Activités</a>
+                        <a class="dropdown-item" href="facturations.html">Facturation</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plus
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                        <a class="dropdown-item" href="charte.html">Charte de Bientraitance</a>
+                        <a class="dropdown-item" href="ils-parlent-de-nous.html">Ils parlent de nous</a>
+                        <a class="dropdown-item" href="formalites-administratives.html">Formalités Administratives</a>
+                        <a class="dropdown-item" href="acceder.html">Comment y accéder</a>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    <main>
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Pour toute question ou demande d'information, nos coordonnées :</p>
+                    <p><strong>Email:</strong> <a href="mailto:contact@ehpad-marcel-jacquelinet.fr">contact@ehpad-marcel-jacquelinet.fr</a></p>
+                    <p><strong>Téléphone:</strong> 03 80 65 34 22</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Formulaire de contact</h3>
+                    <form action="submit_form.php" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nom :</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email :</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message :</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-4">
+                <h3>Documents Importants</h3>
+                <p>Vous pouvez consulter et télécharger nos documents officiels :</p>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="fichier/2%20Règlement%20de%20fonctionnement%202024.pdf" target="_blank">Règlement de fonctionnement 2024</a> - 
+                        <a href="fichier/2%20Règlement%20de%20fonctionnement%202024.pdf" download="Reglement_de_fonctionnement_2024.pdf" class="btn btn-secondary">Télécharger</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="fichier/3%20Contrat%20séjour%20EHPAD%202024.pdf" target="_blank" class="btn btn-link">Contrat de séjour EHPAD 2024</a> -
+                        <a href="fichier/3%20Contrat%20séjour%20EHPAD%202024.pdf" download="Contrat_sejour_EHPAD_2024.pdf" class="btn btn-secondary">Télécharger</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mt-4">
+                <h3>Inscription via Viatrajectoire</h3>
+                <p>Pour vous inscrire, veuillez utiliser le formulaire Viatrajectoire :</p>
+                <p><a href="https://trajectoire.sante-ra.fr/GrandAge/Pages/Public/CreationDossierAvantPropos.aspx" class="btn btn-secondary" target="_blank">Formulaire d'inscription Viatrajectoire</a></p>
+            </div>
+
+            <div class="mt-4">
+                <h3>Plan d'accès</h3>
+                <p>Adresse : 65, route de Dijon, 21600 LONGVIC</p>
+                <div id="map" style="height: 400px; width: 100%;"></div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 EHPAD Marcel-Jacquelinet. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Google Maps JavaScript API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMtzIEEfrD16k5XpyVzRI461jRyGSXz6U&callback=initMap" async defer></script>
+<script>
+function initMap() {
+    // Coordonnées du lieu - remplacez ces coordonnées par celles exactes de votre lieu si nécessaire
+    var ehpadLocation = {lat: 47.297580, lng: 5.052680};
+
+    // Création de la carte et configuration des options
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,  // Vous pouvez ajuster le niveau de zoom selon vos besoins
+        center: ehpadLocation  // Centre la carte sur les coordonnées spécifiées
+    });
+
+    // Ajout d'un marqueur sur la carte à la position spécifiée
+    var marker = new google.maps.Marker({
+        position: ehpadLocation,
+        map: map  // Associe le marqueur à la carte créée
+    });
+}
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - EHPAD Marcel-Jacquelinet</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lien CSS de Bootstrap -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Liens JS de Bootstrap (y compris jQuery et Popper.js pour le dropdown) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+    <!-- Lien vers Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Lien vers un fichier JavaScript pour les animations -->
+    <script src="script.js" defer></script>
+    <style>
+        /* Ajout de styles CSS pour les animations */
+        .welcome-message {
+            animation: slide-up 1s ease-out;
+        }
+
+        @keyframes slide-up {
+            from {
+                transform: translateY(50%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Ajout de styles CSS pour les icônes de chiffres clés */
+        .icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #FFA500; /* Couleur orange */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container welcome-message">
+            <h1>EHPAD Marcel-Jacquelinet</h1>
+            <p>65, route de Dijon, 21600 LONGVIC</p>
+            <p>Nous contacter : <a href="tel:0380653422">03 80 65 34 22</a></p>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        À propos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                        <a class="dropdown-item" href="team.html">Équipe</a>
+                        <a class="dropdown-item" href="mission.html">Mission</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <a class="dropdown-item" href="life-at-ehpad.html">Vie à l'EHPAD</a>
+                        <a class="dropdown-item" href="medical-care.html">Soins médicaux</a>
+                        <a class="dropdown-item" href="activities.html">Activités</a>
+                        <a class="dropdown-item" href="facturations.html">Facturation</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plus
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                        <a class="dropdown-item" href="charte.html">Charte de Bientraitance</a>
+                        <a class="dropdown-item" href="ils-parlent-de-nous.html">Ils parlent de nous</a>
+                        <a class="dropdown-item" href="formalites-administratives.html">Formalités Administratives</a>
+                        <a class="dropdown-item" href="acceder.html">Comment y accéder</a>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    
+    
+    
+    
+    
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/facade.png" alt="Première façade de l'EHPAD Marcel-Jacquelinet">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/repas_flou.jpg" alt="Intérieur de l'EHPAD Marcel-Jacquelinet">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/sallesport.jpg" alt="Jardin de l'EHPAD Marcel-Jacquelinet">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Précédent</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Suivant</span>
+            </a>
+        </div>
+        
+    </main>
+
+
+
+
+    <section id="historique-presentation" class="mt-5">
+        <div class="container">
+            <h2>Historique-Présentation</h2>
+            <p>La maison de retraite « Marcel Jacquelinet » se situe à Longvic, ville de 9000 habitants, située au sud de Dijon, en Côte d'Or. Fondée par la volonté du Docteur Marcel Jacquelinet, maire de Longvic, elle a été inaugurée en février 1991 et accueillait alors 63 personnes.</p>
+            <p>En 2002, la maison de retraite devient EHPAD (maison de retraite médicalisée). En février 2009, la capacité d'hébergement est portée à 68 résidents avec l'accueil de 5 résidents supplémentaires en hébergement temporaire. Par arrêté du 1er juillet 2011, l'établissement est autorisé à accueillir 3 personnes supplémentaires en hébergement permanent, ce qui porte sa capacité à 71 personnes accueillies.</p>
+            <p>En septembre 2022, l'ouverture de l'Unité de Vie Protégée (UVP) permet d'accueillir 12 personnes supplémentaires, portant la capacité d'accueil à 83. En octobre 2023, l'ouverture d'un Pôle d'Activités et de Soins Adaptés (PASA) permet de proposer des activités à 14 personnes accueillies à l'EHPAD.</p>
+            <p>L'établissement a signé, en 2012, des conventions permettant l'intervention de structures pratiquant l'hospitalisation à domicile (HAD), lorsque la situation d'une personne accueillie le nécessite.</p>
+        </div>
+    </section>
+    
+
+    <section id="chiffres-cles" class="mt-5">
+        <div class="container">
+            <div class="row counter">
+                <div class="col-md-3 col-sm-6">
+                    <div class="all-count">
+                        <div class="icon"><i class="fas fa-user-md"></i></div>
+                        <div class="chiffre timer count-number" data-to="441" data-speed="2000">441</div>
+                        <div class="title">Personnels</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="all-count">
+                        <div class="icon"><i class="fas fa-bed"></i></div>
+                        <div class="chiffre timer count-number" data-to="542" data-speed="2000">69</div>
+                        <div class="title">Chambres individuelles</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="all-count">
+                        <div class="icon"><i class="fas fa-puzzle-piece"></i></div>
+                        <div class="chiffre timer count-number" data-to="124" data-speed="2000">124</div>
+                        <div class="title">Activités &amp; Sorties</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="all-count">
+                        <div class="icon"><i class="fas fa-grin"></i></div>
+                        <div class="chiffre timer count-number" data-to="76" data-speed="2000">71</div>
+                        <div class="title">Résidents</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 EHPAD Marcel-Jacquelinet. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('.dropdown').hover(function() {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+            }, function() {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+            });
+        });
+        </script>
+</body>
+</html>

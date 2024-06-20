@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soins Médicaux - EHPAD Marcel-Jacquelinet</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lien CSS de Bootstrap -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Liens JS de Bootstrap (y compris jQuery et Popper.js pour le dropdown) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+    <!-- Lien vers Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Lien vers un fichier JavaScript pour les animations -->
+    <script src="script.js" defer></script>
+    <style>
+        /* Ajout de styles CSS pour les animations */
+        .welcome-message {
+            animation: slide-up 1s ease-out;
+        }
+
+        @keyframes slide-up {
+            from {
+                transform: translateY(50%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Ajout de styles CSS pour les icônes de chiffres clés */
+        .icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #FFA500; /* Couleur orange */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container welcome-message">
+            <h1>EHPAD Marcel-Jacquelinet</h1>
+            <p>65, route de Dijon, 21600 LONGVIC</p>
+            <p>Nous contacter : <a href="tel:0380653422">03 80 65 34 22</a></p>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        À propos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                        <a class="dropdown-item" href="team.html">Équipe</a>
+                        <a class="dropdown-item" href="mission.html">Mission</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <a class="dropdown-item" href="life-at-ehpad.html">Vie à l'EHPAD</a>
+                        <a class="dropdown-item" href="medical-care.html">Soins médicaux</a>
+                        <a class="dropdown-item" href="activities.html">Activités</a>
+                        <a class="dropdown-item" href="facturations.html">Facturation</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plus
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                        <a class="dropdown-item" href="charte.html">Charte de Bientraitance</a>
+                        <a class="dropdown-item" href="ils-parlent-de-nous.html">Ils parlent de nous</a>
+                        <a class="dropdown-item" href="formalites-administratives.html">Formalités Administratives</a>
+                        <a class="dropdown-item" href="acceder.html">Comment y accéder</a>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h1>Soins et Surveillance Médicale</h1>
+            <p>Les soins médicaux et la surveillance médicale sont assurés par le Médecin traitant libéral, librement choisi par la personne accueillie, étant entendu que le Médecin libéral accepte de se déplacer à l’EHPAD pour consulter la personne accueillie. La personne accueillie est informée qu’un contrat doit être signé entre le Médecin traitant et l’EHPAD. La liste des professionnels de santé intervenant dans l’établissement et de ceux ayant signé une convention avec l’établissement est à la disposition de la personne accueillie qui en fait la demande.</p>
+            <p>Concernant les soins, l’établissement a choisi l’option tarifaire partielle. Les honoraires médicaux des praticiens (Médecins généralistes et spécialistes) exerçant à titre libéral sont à la charge de la personne accueillie. Ils seront réglés directement ou par tiers payant. Les actes et autres frais sont remboursés à la personne accueillie par la sécurité sociale et/ou par la mutuelle, dans les conditions habituelles.</p>
+    
+            <h2>Surveillance Médicale</h2>
+            <p>Le Médecin traitant libéral assure notamment :</p>
+            <ul>
+                <li>Évaluation régulière de l'état de santé à l'entrée dans l’établissement.</li>
+                <li>Visites médicales à la demande de la personne accueillie ou des infirmières, suivant l’état de santé.</li>
+                <li>Intervention de jour comme de nuit si nécessaire, sur appel de l'infirmière.</li>
+                <li>Décision concernant la nécessité d'une hospitalisation ou d'un transfert vers un établissement mieux adapté.</li>
+            </ul>
+            <p>Avec l’autorisation de la personne accueillie, l’établissement peut avoir recours à la télémédecine si le médecin coordonnateur le juge nécessaire dans la prise en charge. La télémédecine est une forme de pratique médicale à distance utilisant les techniques de l’informatique et de la communication.</p>
+    
+            <h2>Médecin Coordonnateur</h2>
+            <p>Un Médecin coordonnateur est attaché à l'établissement, assurant l’encadrement médical de l’équipe soignante et l’élaboration du projet général de soins, s’intégrant dans le projet d’établissement.</p>
+    
+            <h2>Pharmacie</h2>
+            <p>L’établissement a signé une convention de partenariat avec une pharmacie d’officine pour la préparation des piluliers. La personne accueillie peut choisir une autre pharmacie si elle le souhaite, sous certaines conditions.</p>
+        </div>
+    </main>
+    
+
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 EHPAD Marcel-Jacquelinet. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('.dropdown').hover(function() {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+            }, function() {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+            });
+        });
+        </script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+/* Style général pour la navigation */
+nav {
+    background: #418575;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li:hover > a, nav ul li a:focus {
+    background-color: #2e6f60;
+}
+
+/* Styles pour les menus déroulants */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+/* Centrer le contenu de la navbar */
+.navbar-collapse {
+    justify-content: center; /* Centre les éléments de la navbar */
+}
+
+/* Centrer les éléments de la liste dans la navbar */
+.navbar-nav {
+    justify-content: center;
+    flex-grow: 1; /* Permet aux éléments de la navbar de prendre tout l'espace disponible */
+}
+
+/* Style pour le dropdown pour qu'il s'aligne bien sous son parent */
+.dropdown-menu {
+    text-align: center; /* Centre le texte dans le dropdown */
+}
+
+
+
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 0px; /* Espacement pour la barre de navigation fixe */
+}
+
+.container {
+    padding: 15px;
+}
+
+/* Header */
+header {
+    background-color: #6C7A89;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #39dab4; /* Vert doux */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #FFD700; /* Jaune pour le survol */
+}
+
+/* Carousel */
+.carousel-item img {
+    height: 65vh; /* Hauteur fixe pour toutes les images */
+    object-fit: cover; /* Couvre la hauteur fixe sans distorsion */
+}
+
+/* Sections */
+section {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+/* Boutons et liens */
+.btn-primary {
+    background-color: #ffef96; /* jaune pastel */
+    border-color: #fed766; /* jaune plus saturé */
+}
+
+.btn-primary:hover {
+    background-color: #fed766; /* jaune plus saturé au survol */
+}
+
+/* Texte plus grand pour la lisibilité */
+p, li, a, span {
+    font-size: 1.2em;
+}
+
+/* Améliorations pour la visibilité */
+h1, h2, h3 {
+    color: #2d2e2b; /* vert foncé pour titres */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000; /* Couleur des flèches */
+}
+
+.carousel-indicators li {
+    background-color: #000; /* Couleur des indicateurs */
+}
+
+.carousel-item img {
+    width: auto; /* Garde la largeur originale de l'image */
+    max-height: 500px; /* Hauteur maximale pour toutes les images */
+    margin: auto; /* Centre l'image horizontalement dans le carrousel */
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 500px; /* Fixe une hauteur spécifique pour le conteneur */
+}
+
+
+.contact-info {
+    text-align: left; /* Aligner le texte à gauche */
+    padding-left: 20px; /* Ajouter un peu de padding à gauche pour ne pas coller au bord */
+    font-size: 0.8rem; /* Réduire la taille de la police */
+    max-width: 300px; /* Limiter la largeur du conteneur pour le rendre plus petit */
+}
+
+.image-container-menu {
+    text-align: center; /* Centre les images dans leurs conteneurs */
+    margin: 20px 0; /* Ajoute de la marge au-dessus et en dessous de chaque conteneur d'image */
+}
+
+.img-fluid, .img-menu {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Ajoute une marge en dessous de chaque image */
+}
+
+.img-menu {
+    border-radius: 10px; /* Ajoute des coins arrondis à l'image du menu */
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}

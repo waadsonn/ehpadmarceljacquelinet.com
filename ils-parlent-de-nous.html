@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ils parlent de nous - EHPAD Marcel-Jacquelinet</title>
+    <link rel="stylesheet" href="styles.css">
+     <!-- Lien CSS de Bootstrap -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Liens JS de Bootstrap (y compris jQuery et Popper.js pour le dropdown) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Lien vers Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container welcome-message">
+            <h1>EHPAD Marcel-Jacquelinet</h1>
+            <p>65, route de Dijon, 21600 LONGVIC</p>
+            <p>Nous contacter : <a href="tel:0380653422">03 80 65 34 22</a></p>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        À propos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                        <a class="dropdown-item" href="team.html">Équipe</a>
+                        <a class="dropdown-item" href="mission.html">Mission</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <a class="dropdown-item" href="life-at-ehpad.html">Vie à l'EHPAD</a>
+                        <a class="dropdown-item" href="medical-care.html">Soins médicaux</a>
+                        <a class="dropdown-item" href="activities.html">Activités</a>
+                        <a class="dropdown-item" href="facturations.html">Facturation</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plus
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                        <a class="dropdown-item" href="charte.html">Charte de Bientraitance</a>
+                        <a class="dropdown-item" href="ils-parlent-de-nous.html">Ils parlent de nous</a>
+                        <a class="dropdown-item" href="formalites-administratives.html">Formalités Administratives</a>
+                        <a class="dropdown-item" href="acceder.html">Comment y accéder</a>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    <main class="container">
+        <h2 class="mt-5 mb-3">Ils parlent de nous</h2>
+        <p>Découvrez ce que les médias disent de notre établissement :</p>
+        <div class="list-group">
+            <a href="https://www.francebleu.fr/infos/societe/pic-de-chaleur-en-cote-d-or-a-l-ephad-marcel-jacquelinet-a-longvic-fait-le-maximum-pour-les-1596179633" target="_blank" class="list-group-item list-group-item-action">
+                <i class="fas fa-newspaper"></i> Pic de chaleur en Côte-d'Or : à l'EHPAD Marcel-Jacquelinet à Longvic, on fait le maximum pour les résidents - France Bleu
+            </a>
+            <a href="https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/cote-d-or/dijon/covid-19-noel-est-un-moment-de-retrouvailles-on-ne-doit-pas-fermer-face-a-la-cinquieme-vague-les-ehpad-esperent-maintenir-les-fetes-2375725.html" target="_blank" class="list-group-item list-group-item-action">
+                <i class="fas fa-newspaper"></i> COVID-19 : Noël est un moment de retrouvailles, on ne doit pas fermer. Face à la cinquième vague, les EHPAD espèrent maintenir les fêtes - France 3
+            </a>
+            <a href="https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/robot-maintenir-lien-entre-familles-personnes-agees-ehpad-longvic-21-1838292.html" target="_blank" class="list-group-item list-group-item-action">
+                <i class="fas fa-robot"></i> Un robot pour maintenir le lien entre les familles et les personnes âgées à l'EHPAD de Longvic (21) - France 3
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 EHPAD Marcel-Jacquelinet. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
